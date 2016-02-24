@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="es" ng-app="App">
+<head>
+	<meta charset="UTF-8">
+	<title>toBusiness</title>
+
+	<meta name="format-detection" content="telephone=no" />
+    <meta name="msapplication-tap-highlight" content="no" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height" />
+
+</head>
+<body ng-controller="AppController">
+
+	<!-- Render view -->
+	<div ng-view></div>
+
+	<!-- References angular.js -->
+	<script src="assets/js/angular.min.js"></script>
+	<script src="assets/js/angular-locale_es-mx.js"></script>
+	<script src="assets/js/angular-route.min.js"></script>
+	<script src="assets/js/angular-touch.min.js"></script>
+
+
+	<!-- app -->
+	<script src="app/app.module.js"></script>
+	<script src="app/app.router.js"></script>
+	<script src="app/app.controller.js"></script>
+
+	<!-- Modules  -->
+	<script src="app/modules/home/home.module.js"></script>
+
+	<!-- Controllers -->
+	<script src="app/modules/home/controllers/home.controller.js"></script>
+
+</body>
+</html>
