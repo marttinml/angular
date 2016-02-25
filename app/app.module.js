@@ -1,9 +1,9 @@
 /*global angular*/
 (function () {
 
-    var angularModules      = ["ngRoute"];
+    var angularModules      = ["ngRoute","ngTouch"];
     var customModules       = ["Home"];
-    var componentsModules   = [];
+    var componentsModules   = ["MainHeader","MainFooter"];
 
     var modules = angularModules.concat(customModules,componentsModules);
     angular.module('App', modules);
