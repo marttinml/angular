@@ -1,0 +1,36 @@
+main-header{
+	width: 100%;
+    height: 50px;
+    position: fixed;
+    background-size: 101% 90px;
+    display: block;
+    top: 0;
+    transition: all ease .3s;
+    left: 0;
+    /*background-color: rgba(36,211,154,.9);*/
+    background-color: rgba(250,250,250,.8);
+    z-index: 10;
+    text-align: center;
+    border-bottom: 1px solid rgba(0,0,0,.1);
+}
+
+main-header > i.ico{
+    width: 40px;
+    height: 20px;
+    display: block;
+    left: 20px;
+    top: 15px;
+    background-image: url(../../../../assets/img/toBusiness-logo.svg);
+    background-repeat: no-repeat;
+    position: absolute;
+}
+
+main-header > i.ico.back{
+    background-image: url(../../../../../assets/img/10_FLECHA_back.svg);
+}
+
+main-header > span{
+    color: rgb(100,100,100);
+    font-size: 18px;
+    line-height: 2.7;
+}
