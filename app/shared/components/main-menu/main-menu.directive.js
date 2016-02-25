@@ -4,12 +4,12 @@
 	var directive = function($swipe){
 		
 		var link = function(scope, element, attrs){
-			element.addClass('disable-select');
+
 		};
 
 		return {
 			restrict: 'E',
-	        templateUrl: 'app/shared/components/main-footer/main-footer.template.html',
+	        templateUrl: 'app/shared/components/main-menu/main-menu.template.html',
 	        link: link,
 			scope:{
 				options:'=?source'
@@ -20,5 +20,5 @@
 	
 
 
-	angular.module('MainFooter', []).directive('mainFooter',directive);
+	angular.module('MainMenu', []).directive('mainMenu',directive);
 })();

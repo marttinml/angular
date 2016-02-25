@@ -8,6 +8,7 @@
 			scope.options = scope.options || {};
 			scope.options.back = scope.options.back || false;
 			scope.options.title = scope.options.title || '';
+			scope.options.footer = scope.options.footer || [];
 
 			scope.back = scope.options.back ? true : false;
 
