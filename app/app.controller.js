@@ -3,6 +3,8 @@
 
     var controller = function ($scope, $routeParams) {
         //code
+
+        
         
     };
     controller.$inject = ['$scope', '$routeParams'];

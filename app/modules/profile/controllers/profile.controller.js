@@ -3,13 +3,12 @@
 
     var controller = function ($scope, $routeParams) {
         //code
-
+        
         $scope.footer = [
         	{
         		title:"Inicio",
         		icoClass : "home",
-        		url:"",
-        		active:true
+        		url:"#/"
         	},
         	{
         		title:"Tiempo aire",
@@ -25,25 +24,23 @@
         	{
         		title:"Perfil",
         		icoClass : "profile",
-        		url:"#/profile"
+        		active:true
         	},
         	{
         		title:"Ayuda",
         		icoClass : "help",
         		url:"#/help"
         	}
-            
         ];
 
         $scope.header = {
-            title:"Inicio",
+            title:"Perfil",
             footer:$scope.footer
         };
 
 
-        $scope.ctrl = 'Home';
     };
     controller.$inject = ['$scope', '$routeParams'];
-    angular.module('Home').controller('HomeController', controller);
+    angular.module('Profil').controller('ProfilController', controller);
 
 })();
