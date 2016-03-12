@@ -9,11 +9,10 @@
         		title:"Inicio",
         		icoClass : "home",
         		url:"",
-        		active:true
         	},
         	{
         		title:"Tiempo aire",
-        		icoClass : "phone",
+        		icoClass : "fa-phone",
         		url:"#/tiempoaire"
         	},
         	{
