@@ -1,48 +1,16 @@
 /*global angular*/
 (function () {
 
-    var controller = function ($scope, $routeParams) {
+    var controller = function ($scope, $rootScope, $routeParams) {
         //code
-
-        $scope.footer = [
-        	{
-        		title:"Inicio",
-        		icoClass : "home",
-        		url:"",
-        	},
-        	{
-        		title:"Tiempo aire",
-        		icoClass : "fa-phone",
-        		url:"#/tiempoaire"
-        	},
-        	{
-        		title:"Mensajes",
-        		icoClass : "message",
-        		url:"#/inbox",
-                count:5
-        	},
-        	{
-        		title:"Perfil",
-        		icoClass : "profile",
-        		url:"#/profile"
-        	},
-        	{
-        		title:"Ayuda",
-        		icoClass : "help",
-        		url:"#/help"
-        	}
-            
-        ];
+        $rootScope.setIndexQuickMenuActive(0);
 
         $scope.header = {
             title:"Inicio",
             footer:$scope.footer
         };
-
-
-        $scope.ctrl = 'Home';
     };
-    controller.$inject = ['$scope', '$routeParams'];
+    controller.$inject = ['$scope','$rootScope','$routeParams'];
     angular.module('Home').controller('HomeController', controller);
 
 })();

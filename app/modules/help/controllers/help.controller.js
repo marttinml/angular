@@ -1,37 +1,9 @@
 /*global angular*/
 (function () {
 
-    var controller = function ($scope, $routeParams) {
+    var controller = function ($scope, $rootScope, $routeParams) {
         //code
-        
-        $scope.footer = [
-        	{
-        		title:"Inicio",
-        		icoClass : "home",
-        		url:"#/"
-        	},
-        	{
-        		title:"Tiempo aire",
-        		icoClass : "phone",
-        		url:"#/tiempoaire"
-        	},
-        	{
-        		title:"Mensajes",
-        		icoClass : "message",
-        		url:"#/inbox",
-                count:5
-        	},
-        	{
-        		title:"Perfil",
-        		icoClass : "profile",
-        		url:"#/profile"
-        	},
-        	{
-        		title:"Ayuda",
-        		icoClass : "help",
-                active:true
-        	}
-        ];
+        $rootScope.setIndexQuickMenuActive(4);
 
         $scope.header = {
             title:"Ayuda",
@@ -40,7 +12,7 @@
 
 
     };
-    controller.$inject = ['$scope', '$routeParams'];
+    controller.$inject = ['$scope', '$rootScope', '$routeParams'];
     angular.module('Help').controller('HelpController', controller);
 
 })();

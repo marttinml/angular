@@ -1,37 +1,12 @@
 /*global angular*/
 (function () {
 
-    var controller = function ($scope, $routeParams) {
+    var controller = function ($scope, $rootScope, $routeParams) {
         //code
         
-        $scope.footer = [
-        	{
-        		title:"Inicio",
-        		icoClass : "home",
-        		url:"#/"
-        	},
-        	{
-        		title:"Tiempo aire",
-        		icoClass : "phone",
-        		active:true
-        	},
-        	{
-        		title:"Mensajes",
-        		icoClass : "message",
-        		url:"#/inbox",
-                count:5
-        	},
-        	{
-        		title:"Perfil",
-        		icoClass : "profile",
-        		url:"#/profile"
-        	},
-        	{
-        		title:"Ayuda",
-        		icoClass : "help",
-        		url:"#/help"
-        	}
-        ];
+        $rootScope.setIndexQuickMenuActive(1);
+
+        $scope.carriers = ['Nextel','Iusacell','Unefon','Telcel','Movistar','Virgin'];
 
         $scope.header = {
             title:"Tiempo aire",
@@ -40,7 +15,7 @@
 
 
     };
-    controller.$inject = ['$scope', '$routeParams'];
+    controller.$inject = ['$scope', '$rootScope', '$routeParams'];
     angular.module('Tiempoaire').controller('TiempoaireController', controller);
 
 })();
