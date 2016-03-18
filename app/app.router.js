@@ -8,7 +8,7 @@
 
 
         // Home
-        $routeProvider.when('/', {
+        $routeProvider.when('/home', {
             templateUrl: baseUrl + 'home/views/home.view.html',
             controller: 'HomeController'
         });

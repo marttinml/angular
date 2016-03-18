@@ -1,0 +1,19 @@
+carriers{
+    display: block;
+    margin-top: 20px;
+}
+carriers > ul{
+    text-align: center;
+}
+carriers > ul > li{
+    display: inline-block;
+    width: 64px;
+    height: 64px;
+    margin: 5px 10px 5px 10px;
+    background-color: rgb(240,240,240);
+    border-radius: 50%;
+    line-height: 3.9;
+}
+carriers > ul > li.active{
+    background-color: rrgb(36,211,154);
+}

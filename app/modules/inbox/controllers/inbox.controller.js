@@ -1,36 +1,10 @@
 /*global angular*/
 (function () {
 
-    var controller = function ($scope, $routeParams) {
+    var controller = function ($scope, $rootScope, $routeParams) {
         //code
         
-        $scope.footer = [
-        	{
-        		title:"Inicio",
-        		icoClass : "home",
-        		url:"#/"
-        	},
-        	{
-        		title:"Tiempo aire",
-        		icoClass : "phone",
-        		url:"#/tiempoaire"
-        	},
-        	{
-        		title:"Mensajes",
-        		icoClass : "message",
-                active:true
-        	},
-        	{
-        		title:"Perfil",
-        		icoClass : "profile",
-        		url:"#/profile"
-        	},
-        	{
-        		title:"Ayuda",
-        		icoClass : "help",
-        		url:"#/help"
-        	}
-        ];
+        $rootScope.setIndexQuickMenuActive(2);
         
         $scope.header = {
             title:"Mensajes",
@@ -38,7 +12,7 @@
         };
 
     };
-    controller.$inject = ['$scope', '$routeParams'];
+    controller.$inject = ['$scope', '$rootScope', '$routeParams'];
     angular.module('Inbox').controller('InboxController', controller);
 
 })();

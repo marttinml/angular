@@ -3,6 +3,7 @@ body, input, button,textarea{
 	font-weight: 100;
 	line-height: 1.2;
 	color: rgb(100,100,100);
+	padding-top: 50px;
 }
 b{
 	font-weight: 300;
@@ -30,4 +31,11 @@ a, input, button {
   -moz-user-select: none;    
   -ms-user-select: none;      
   user-select: none;
+}
+
+.block{
+	display: block!important;
+}
+.green{
+	    color: rgb(36,211,154)!important;
 }

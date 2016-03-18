@@ -23,10 +23,10 @@ main-footer > ul > li{
 }
 
 main-footer > ul > li i{
-    width: 32px;
-    height: 32px;
+    width: 22px;
+    height: 22px;
     display: block;
-    margin: 3px auto 0px auto;
+    margin: 10px auto 0px auto;
     background-repeat: no-repeat;
     background-position: center;
 }
@@ -45,7 +45,7 @@ main-footer > ul > li i.count{
     font-size: 12px;
 }
 
-main-footer > ul > li.active span{
+main-footer > ul > li.active > a{
     color:rgb(36,211,154);
 }
 

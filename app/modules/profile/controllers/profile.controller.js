@@ -1,37 +1,10 @@
 /*global angular*/
 (function () {
 
-    var controller = function ($scope, $routeParams) {
+    var controller = function ($scope, $rootScope, $routeParams) {
         //code
         
-        $scope.footer = [
-        	{
-        		title:"Inicio",
-        		icoClass : "home",
-        		url:"#/"
-        	},
-        	{
-        		title:"Tiempo aire",
-        		icoClass : "phone",
-        		url:"#/tiempoaire"
-        	},
-        	{
-        		title:"Mensajes",
-        		icoClass : "message",
-        		url:"#/inbox",
-                count:5
-        	},
-        	{
-        		title:"Perfil",
-        		icoClass : "profile",
-        		active:true
-        	},
-        	{
-        		title:"Ayuda",
-        		icoClass : "help",
-        		url:"#/help"
-        	}
-        ];
+        $rootScope.setIndexQuickMenuActive(3);
 
         $scope.header = {
             title:"Perfil",
@@ -40,7 +13,7 @@
 
 
     };
-    controller.$inject = ['$scope', '$routeParams'];
+    controller.$inject = ['$scope', '$rootScope', '$routeParams'];
     angular.module('Profil').controller('ProfilController', controller);
 
 })();
