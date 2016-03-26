@@ -2,4 +2,16 @@
 <main-footer source="quickMenu"></main-footer>
 <main-menu></main-menu>
 
-<carriers source="carriers"></carriers>
+<main class="tiempoaire">
+
+	<carriers source="carriers" ng-model="carrierIndex"></carriers>
+	<montos source="carriers[carrierIndex].montos" ng-model="montoIndex"></montos>
+	<input type="text" placeholder="000 000 0000">
+	<input type="text" placeholder="000 000 0000">
+
+	<div class="footer-bottons-2 main-footer">
+		<button class="passive"><i class="fa fa-times fa-2x"></i></button>
+		<button class="active"><i class="fa fa-check fa-2x"></i></button>
+	</div>
+
+</main>
