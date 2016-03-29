@@ -1,4 +1,4 @@
-main-footer{
+al-footer{
 	width: 100%;
     height: 50px;
     position: fixed;
@@ -14,15 +14,15 @@ main-footer{
     font-size: 11px;
 
 }
-main-footer > ul{
+al-footer > ul{
     
 }
-main-footer > ul > li{
+al-footer > ul > li{
     display: inline-block;
     position: relative;
 }
 
-main-footer > ul > li i{
+al-footer > ul > li i{
     width: 22px;
     height: 22px;
     display: block;
@@ -31,7 +31,7 @@ main-footer > ul > li i{
     background-position: center;
 }
 
-main-footer > ul > li i.count{
+al-footer > ul > li i.count{
     width: auto;
     height: auto;
     border-radius: 20px;
@@ -45,7 +45,7 @@ main-footer > ul > li i.count{
     font-size: 12px;
 }
 
-main-footer > ul > li.active > a{
+al-footer > ul > li.active > a{
     color:rgb(36,211,154);
 }
 
@@ -54,76 +54,76 @@ main-footer > ul > li.active > a{
 
 
 /* one item */
-main-footer > ul > li:nth-last-child(1) {
+al-footer > ul > li:nth-last-child(1) {
     width: 100%;
 }
 
 /* two items */
-main-footer > ul > li:nth-last-child(2),
-main-footer > ul > li:nth-last-child(1) {
+al-footer > ul > li:nth-last-child(2),
+al-footer > ul > li:nth-last-child(1) {
     width: 50%;
 }
 
 /* three items */
-main-footer > ul > li:nth-last-child(3),
-main-footer > ul > li:nth-last-child(2),
-main-footer > ul > li:nth-last-child(1) {
+al-footer > ul > li:nth-last-child(3),
+al-footer > ul > li:nth-last-child(2),
+al-footer > ul > li:nth-last-child(1) {
     width: 33.3333%;
 }
 
 /* four items */
-main-footer > ul > li:nth-last-child(4),
-main-footer > ul > li:nth-last-child(3),
-main-footer > ul > li:nth-last-child(2),
-main-footer > ul > li:nth-last-child(1) {
+al-footer > ul > li:nth-last-child(4),
+al-footer > ul > li:nth-last-child(3),
+al-footer > ul > li:nth-last-child(2),
+al-footer > ul > li:nth-last-child(1) {
     width: 25%;
 }
 
 /* five items */
-main-footer > ul > li:nth-last-child(5),
-main-footer > ul > li:nth-last-child(4),
-main-footer > ul > li:nth-last-child(3),
-main-footer > ul > li:nth-last-child(2),
-main-footer > ul > li:nth-last-child(1) {
+al-footer > ul > li:nth-last-child(5),
+al-footer > ul > li:nth-last-child(4),
+al-footer > ul > li:nth-last-child(3),
+al-footer > ul > li:nth-last-child(2),
+al-footer > ul > li:nth-last-child(1) {
     width: 20%;
 }
 
-main-footer > ul > li i.home{
+al-footer > ul > li i.home{
     background-image: url(img/ico-home-line-gray.svg);
 }
-main-footer > ul > li i.phone{
+al-footer > ul > li i.phone{
     background-image: url(img/ico-phone-line-gray.svg);
 }
-main-footer > ul > li i.message{
+al-footer > ul > li i.message{
     background-image: url(img/ico-message-line-gray.svg);
 }
-main-footer > ul > li i.profile{
+al-footer > ul > li i.profile{
     background-image: url(img/ico-profile-line-gray.svg);
 }
-main-footer > ul > li i.help{
+al-footer > ul > li i.help{
     background-image: url(img/ico-help-line-gray.svg);
 }
 
 
-main-footer > ul > li i.active.home{
+al-footer > ul > li i.active.home{
     background-image: url(img/ico-home-bold-green.svg);
 }
-main-footer > ul > li i.active.phone{
+al-footer > ul > li i.active.phone{
     background-image: url(img/ico-phone-bold-green.svg);
 }
-main-footer > ul > li i.active.message{
+al-footer > ul > li i.active.message{
     background-image: url(img/ico-message-bold-green.svg);
 }
-main-footer > ul > li i.active.profile{
+al-footer > ul > li i.active.profile{
     background-image: url(img/ico-profile-bold-green.svg);
 }
-main-footer > ul > li i.active.help{
+al-footer > ul > li i.active.help{
     background-image: url(img/ico-help-bold-green.svg);
 }
 
 
 @media (min-width: 700px) {
-    main-footer{
+    al-footer{
         display:none;
     }
 }

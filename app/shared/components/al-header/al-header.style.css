@@ -1,4 +1,4 @@
-main-header{
+al-header{
 	width: 100%;
     height: 50px;
     position: fixed;
@@ -15,7 +15,7 @@ main-header{
     box-shadow: 0 5px 20px rgba(0,0,0,.2);
 }
 
-main-header > i.ico{
+al-header > i.ico{
     width: 40px;
     height: 20px;
     display: block;
@@ -26,11 +26,11 @@ main-header > i.ico{
     position: absolute;
 }
 
-main-header > i.ico.back{
+al-header > i.ico.back{
     background-image: url(../../../../../assets/img/10_FLECHA_back.svg);
 }
 
-main-header > span{
+al-header > span{
     color: rgb(255,255,255);
     font-size: 18px;
     line-height: 2.8;
@@ -38,22 +38,22 @@ main-header > span{
 }
 
 
-main-header > ul{
+al-header > ul{
     width: 200px;
     position: absolute;
     right: 70px;
     top:0;
 }
-main-header > ul > li{
+al-header > ul > li{
     display: inline-block;
     position: relative;
     height: 49px;
 }
-main-header > ul > li.active{
+al-header > ul > li.active{
     border-bottom: 2px solid rgb(36,211,154);
 }
 
-main-header > ul > li i{
+al-header > ul > li i{
     width: 24px;
     height: 24px;
     display: block;
@@ -62,7 +62,7 @@ main-header > ul > li i{
     background-position: center;
 }
 
-main-header > ul > li i.count{
+al-header > ul > li i.count{
     width: auto;
     height: auto;
     border-radius: 8px;
@@ -76,7 +76,7 @@ main-header > ul > li i.count{
     font-size: 10px;
 }
 
-main-header > ul > li span{
+al-header > ul > li span{
 
 }
 
@@ -85,76 +85,76 @@ main-header > ul > li span{
 
 
 /* one item */
-main-header > ul > li:nth-last-child(1) {
+al-header > ul > li:nth-last-child(1) {
     width: 100%;
 }
 
 /* two items */
-main-header > ul > li:nth-last-child(2),
-main-header > ul > li:nth-last-child(1) {
+al-header > ul > li:nth-last-child(2),
+al-header > ul > li:nth-last-child(1) {
     width: 50%;
 }
 
 /* three items */
-main-header > ul > li:nth-last-child(3),
-main-header > ul > li:nth-last-child(2),
-main-header > ul > li:nth-last-child(1) {
+al-header > ul > li:nth-last-child(3),
+al-header > ul > li:nth-last-child(2),
+al-header > ul > li:nth-last-child(1) {
     width: 33.3333%;
 }
 
 /* four items */
-main-header > ul > li:nth-last-child(4),
-main-header > ul > li:nth-last-child(3),
-main-header > ul > li:nth-last-child(2),
-main-header > ul > li:nth-last-child(1) {
+al-header > ul > li:nth-last-child(4),
+al-header > ul > li:nth-last-child(3),
+al-header > ul > li:nth-last-child(2),
+al-header > ul > li:nth-last-child(1) {
     width: 25%;
 }
 
 /* five items */
-main-header > ul > li:nth-last-child(5),
-main-header > ul > li:nth-last-child(4),
-main-header > ul > li:nth-last-child(3),
-main-header > ul > li:nth-last-child(2),
-main-header > ul > li:nth-last-child(1) {
+al-header > ul > li:nth-last-child(5),
+al-header > ul > li:nth-last-child(4),
+al-header > ul > li:nth-last-child(3),
+al-header > ul > li:nth-last-child(2),
+al-header > ul > li:nth-last-child(1) {
     width: 20%;
 }
 
-main-header > ul > li i.home{
+al-header > ul > li i.home{
     background-image: url(img/ico-home-line-gray.svg);
 }
-main-header > ul > li i.phone{
+al-header > ul > li i.phone{
     background-image: url(img/ico-phone-line-gray.svg);
 }
-main-header > ul > li i.message{
+al-header > ul > li i.message{
     background-image: url(img/ico-message-line-gray.svg);
 }
-main-header > ul > li i.profile{
+al-header > ul > li i.profile{
     background-image: url(img/ico-profile-line-gray.svg);
 }
-main-header > ul > li i.help{
+al-header > ul > li i.help{
     background-image: url(img/ico-help-line-gray.svg);
 }
 
 
-main-header > ul > li i.active.home{
+al-header > ul > li i.active.home{
     background-image: url(img/ico-home-bold-green.svg);
 }
-main-header > ul > li i.active.phone{
+al-header > ul > li i.active.phone{
     background-image: url(img/ico-phone-bold-green.svg);
 }
-main-header > ul > li i.active.message{
+al-header > ul > li i.active.message{
     background-image: url(img/ico-message-bold-green.svg);
 }
-main-header > ul > li i.active.profile{
+al-header > ul > li i.active.profile{
     background-image: url(img/ico-profile-bold-green.svg);
 }
-main-header > ul > li i.active.help{
+al-header > ul > li i.active.help{
     background-image: url(img/ico-help-bold-green.svg);
 }
 
 
 @media (max-width: 699px) {
-    main-header > ul{
+    al-header > ul{
         display:none;
     }
 }

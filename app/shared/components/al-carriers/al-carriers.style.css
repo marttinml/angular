@@ -1,23 +1,20 @@
-montos{
+al-carriers{
     display: block;
     margin-top: 20px;
-    width: 100%;
-    overflow: auto;
 }
-montos > ul{
+al-carriers > ul{
     text-align: center;
-    margin: auto;
 }
-montos > ul > li{
+al-carriers > ul > li{
     display: inline-block;
     width: 64px;
     height: 64px;
-    margin: 0;
+    margin: 5px 10px 5px 10px;
     background-color: rgb(240,240,240);
+    border-radius: 50%;
     line-height: 4.4;
     cursor: pointer;
-    border-right: 1px solid rgb(255,255,255);
 }
-montos > ul > li.active{
+al-carriers > ul > li.active{
     background-color: rgb(36,211,154);
 }
