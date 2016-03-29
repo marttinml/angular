@@ -22,7 +22,7 @@
 
 		return {
 			restrict: 'E',
-	        templateUrl: 'app/shared/components/main-header/main-header.template.html',
+	        templateUrl: 'app/shared/components/al-header/al-header.template.html',
 	        link: link,
 			scope:{
 				options:'=?source'
@@ -33,5 +33,5 @@
 	
 
 
-	angular.module('MainHeader', []).directive('mainHeader',directive);
+	angular.module('alHeader', []).directive('alHeader',directive);
 })();

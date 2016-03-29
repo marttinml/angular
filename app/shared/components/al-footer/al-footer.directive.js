@@ -9,7 +9,7 @@
 
 		return {
 			restrict: 'E',
-	        templateUrl: 'app/shared/components/main-footer/main-footer.template.html',
+	        templateUrl: 'app/shared/components/al-footer/al-footer.template.html',
 	        link: link,
 			scope:{
 				options:'=?source'
@@ -20,5 +20,5 @@
 	
 
 
-	angular.module('MainFooter', []).directive('mainFooter',directive);
+	angular.module('alFooter', []).directive('alFooter',directive);
 })();

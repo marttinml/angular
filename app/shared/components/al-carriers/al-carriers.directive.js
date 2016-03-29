@@ -32,7 +32,7 @@
 		return {
 			restrict: 'E',
 			require: '?ngModel',
-	        templateUrl: 'app/shared/components/montos/montos.template.html',
+	        templateUrl: 'app/shared/components/al-carriers/al-carriers.template.html',
 	        link: link,
 			scope:{
 				options:'=?source'
@@ -43,5 +43,5 @@
 	
 
 
-	angular.module('ngMontos', []).directive('montos',directive);
+	angular.module('alCarriers', []).directive('alCarriers',directive);
 })();
