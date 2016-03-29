@@ -9,7 +9,7 @@
 
 		return {
 			restrict: 'E',
-	        templateUrl: 'app/shared/components/main-menu/main-menu.template.html',
+	        templateUrl: 'app/shared/components/al-menu/al-menu.template.html',
 	        link: link,
 			scope:{
 				options:'=?source'
@@ -20,5 +20,5 @@
 	
 
 
-	angular.module('MainMenu', []).directive('mainMenu',directive);
+	angular.module('alMenu', []).directive('alMenu',directive);
 })();
