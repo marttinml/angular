@@ -14,6 +14,6 @@
 
     };
     controller.$inject = ['$scope', '$rootScope', '$routeParams'];
-    angular.module('Profil').controller('ProfilController', controller);
+    angular.module('Profile').controller('ProfilController', controller);
 
 })();

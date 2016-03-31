@@ -17,6 +17,8 @@
             });
             return defer.promise;
         };
+
+        return sharedService;
 	};
 	angular.module('app').factory('$appService',service);
 })();

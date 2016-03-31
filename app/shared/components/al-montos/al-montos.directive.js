@@ -18,7 +18,7 @@
 			};
 
 			ngModelCtrl.$render = function(){
-				if(ngModelCtrl.$modelValue !== undefined){
+				if(ngModelCtrl.$modelValue !== null){
 					if(ngModelCtrl.$modelValue < scope.options.length){
 						scope.select(ngModelCtrl.$modelValue);
 					}

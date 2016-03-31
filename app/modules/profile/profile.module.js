@@ -1,6 +1,6 @@
 /*global angular*/
 (function () {
 
-    angular.module('Profil', []);
+    angular.module('Profile', []);
 
 })();
