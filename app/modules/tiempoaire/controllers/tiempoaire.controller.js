@@ -1,6 +1,8 @@
 /*global angular*/
 (function () {
-    var controller = function ($scope, $rootScope, $routeParams, $tiempoaire) {   
+    var controller = function ($scope, $rootScope, $routeParams, $tiempoaire) {
+        // var xd = new $tiempoaire.constructor($appService);
+        console.log(xd);
         $scope.init = function(){
             $scope.header               = {};
             $scope.header.title         = "Tiempo aire";

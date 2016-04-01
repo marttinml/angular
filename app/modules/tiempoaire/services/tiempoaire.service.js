@@ -43,6 +43,8 @@
 		};
 		// ejecute constructor
 		this.init();
+
+		return this;
 	};
 	angular.module('Tiempoaire').service('$tiempoaire',service);
 })();
