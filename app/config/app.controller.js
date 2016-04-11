@@ -46,6 +46,6 @@
         
     };
     controller.$inject = ['$scope', '$rootScope', '$routeParams'];
-    angular.module('App').controller('AppController', controller);
+    angular.module('app').controller('AppController', controller);
 
 })();

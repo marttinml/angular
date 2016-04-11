@@ -40,6 +40,6 @@
     };
 
     router.$inject = ['$routeProvider'];
-    angular.module('App').config(router);
+    angular.module('app').config(router);
 
 })();
