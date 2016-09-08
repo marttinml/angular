@@ -1,6 +1,6 @@
 /*global angular*/
 (function () {
 
-    angular.module('Home', []);
+    angular.module('home', []);
 
 })();
