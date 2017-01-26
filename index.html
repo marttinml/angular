@@ -17,9 +17,18 @@
 
     <!-- Directives Style -->
 	<link rel="stylesheet" href="app/shared/components/ng-header/ng-header.style.css">
-
+	<link rel="stylesheet" href="app/shared/components/ng-input/ng-input.style.css">
+	<link rel="stylesheet" href="app/shared/components/ng-menu/ng-menu.style.css">
+	<link rel="stylesheet" href="app/shared/components/ng-alert/ng-alert.style.css">
+	<link rel="stylesheet" href="app/shared/components/ng-spin/ng-spin.style.css">
+	<link rel="stylesheet" href="app/shared/components/ng-select/ng-select.style.css">
+	<link rel="stylesheet" href="app/shared/components/ng-checkbox/ng-checkbox.style.css">
+	<link rel="stylesheet" href="app/shared/components/ng-radiobutton/ng-radiobutton.style.css">
+	
 	<!-- Modules Style -->
 	<link rel="stylesheet" href="app/modules/home/assets/home.style.css">
+	<link rel="stylesheet" href="app/modules/http/assets/http.style.css">
+	<link rel="stylesheet" href="app/modules/ui/assets/ui.style.css">
 
 </head>
 <body ng-controller="AppController">
@@ -44,9 +53,26 @@
 	<!-- Modules  -->
 	<script src="app/modules/home/home.module.js"></script>
 	<script src="app/modules/home/controllers/home.controller.js"></script>
-	<script src="app/modules/home/services/home.service.js"></script>
+
+	<script src="app/modules/http/http.module.js"></script>
+	<script src="app/modules/http/controllers/http.controller.js"></script>
+	<script src="app/modules/http/services/http.service.js"></script>
+
+	<script src="app/modules/ui/ui.module.js"></script>
+	<script src="app/modules/ui/controllers/ui.controller.js"></script>
 	
-	<!-- Directives -->
+	<!-- Shared	 -->
+	<!-- Components -->
+	<script src="app/shared/components/ng-input/ng-input.directive.js"></script>
 	<script src="app/shared/components/ng-header/ng-header.directive.js"></script>
+	<script src="app/shared/components/ng-menu/ng-menu.directive.js"></script>
+	<script src="app/shared/components/ng-alert/ng-alert.directive.js"></script>
+	<script src="app/shared/components/ng-spin/ng-spin.directive.js"></script>
+	<script src="app/shared/components/ng-select/ng-select.directive.js"></script>
+	<script src="app/shared/components/ng-checkbox/ng-checkbox.directive.js"></script>
+	<script src="app/shared/components/ng-radiobutton/ng-radiobutton.directive.js"></script>
+
+	<!-- Services -->
+	<script src="app/shared/services/bundle.service.js"></script>
 </body>
 </html>

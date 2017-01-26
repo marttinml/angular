@@ -1,57 +1,21 @@
 /*global angular*/
 (function () {
 
-    var controller = function ($scope, $rootScope, $routeParams, Home) {
-        //code
-        $scope.homeList = [];
-        $scope.get = function(){
-            var home = new Home();
-            home.$get({id:$scope.id}).then(function(home){
-                console.log(home);
-            },function(e){
-                console.log(e);
-            });
-        };
-        $scope.getAll = function(){
-            $scope.homeList = Home.getAll(function(){
-                console.log($scope.homeList);
-            });
-        };
-        $scope.save = function(){
-            var home = new Home();
-            home.title = $scope.title;
-            home.description = $scope.description;
-            home.$save().then(function(home){
-                console.log(home);
-                $scope.homeList.push(home);
-            },function(e){
-                console.log(e);
-            });
-        };
-        $scope.update = function(){
-            var home = new Home();
-            home.title = $scope.title;
-            home.description = $scope.description;
-            home.$update({id:$scope.id}).then(function(home){
-                $scope.homeList = [];
-                $scope.homeList.push(home);
-            },function(e){
-                console.log(e);
-            });
-        };
-        $scope.delete = function(){
-            var home = new Home();
-            home.DOMID =15;
-            home.$delete({id:$scope.id} ).then(function(home){
-                console.log(data);
-                $scope.homeList = [];
-                $scope.homeList.push(home);
-            },function(e){
-                console.log(e);
-            });
-        };
+    var controller = function ($scope, $rootScope, $routeParams, $menu) {
+       $menu.user = { 
+                name:"Martín UI",
+                picture:"",
+                url: "#/"
+            };
+        $menu.options = [ 
+            { item:"Home", url:"#/" },
+            { item:"HTTP", url:"#/http" },
+            { item:"UI", url:"#/ui" }
+        ];
+
+        $scope.menu = $menu;
     };
-    controller.$inject = ['$scope','$rootScope','$routeParams','Home'];
+    controller.$inject = ['$scope','$rootScope','$routeParams','$menu'];
     angular.module('home').controller('HomeController', controller);
 
 })();

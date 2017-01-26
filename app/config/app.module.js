@@ -1,11 +1,12 @@
 /*global angular*/
 (function () {
 
-    var angularModules      = ["ngRoute","ngTouch","ngResource"];
-    var customModules       = ["home"];
-    var componentsModules   = ["alHeader"];
+    var angularLib  = ["ngRoute","ngTouch","ngResource"];
+    var modules     = ["home","http","ui"];
+    var components  = ["ngHeader","ngInput","ngAlert","ngMenu"];
+	var services 	= ["bundle"];
 
-    var modules = angularModules.concat(customModules,componentsModules);
-    angular.module('app', modules);
+    var libs = angularLib.concat(modules,components,services);
+    angular.module('app', libs);
 
 })();
