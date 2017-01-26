@@ -5,10 +5,10 @@
 		
 		var link = function(scope, element, attrs){
 
-			scope.options = scope.options || {};
-			scope.options.back = scope.options.back || false;
-			scope.options.title = scope.options.title || '';
-			scope.options.footer = scope.options.footer || [];
+			scope.options 			= scope.options || {};
+			scope.options.back 		= scope.options.back || false;
+			scope.options.title 	= scope.options.title || '';
+			scope.options.footer 	= scope.options.footer || [];
 
 			scope.back = scope.options.back ? true : false;
 
@@ -22,7 +22,7 @@
 
 		return {
 			restrict: 'E',
-	        templateUrl: 'app/shared/components/al-header/al-header.template.html',
+	        templateUrl: 'app/shared/components/ng-header/ng-header.template.html',
 	        link: link,
 			scope:{
 				options:'=?source'
@@ -33,5 +33,5 @@
 	
 
 
-	angular.module('alHeader', []).directive('alHeader',directive);
+	angular.module('ngHeader', []).directive('ngHeader',directive);
 })();
