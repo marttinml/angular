@@ -1,7 +1,7 @@
 /*global angular*/
 (function () {
 
-    var controller = function ($scope, $rootScope, $routeParams, Home, $menu) {
+    var controller = function ($scope, $rootScope, $routeParams, $test, $menu) {
         //code
         $scope.menu = $menu;
         $scope.homeList     = [];
@@ -10,18 +10,18 @@
         $scope.description  = "";
 
         $scope.get = function(){
-            var home = new Home();
+            var home = new $test();
             home.$get({testId:$scope.testId}).then(function(home){
                 $scope.homeList = [home];
             },$scope.showAlert);
         };
         $scope.getAll = function(){
-            $scope.homeList = Home.getAll(function(){
+            $scope.homeList = $test.getAll(function(){
                 console.log($scope.homeList);
             },$scope.showAlert);
         };
         $scope.save = function(){
-            var home = new Home();
+            var home = new $test();
             home.name = $scope.name;
             home.description = $scope.description;
             console.log(home);
@@ -31,7 +31,7 @@
             },$scope.showAlert);
         };
         $scope.update = function(){
-            var home = new Home();
+            var home = new $test();
             home.name = $scope.name;
             home.description = $scope.description;
             home.$update({testId:$scope.testId}).then(function(home){
@@ -40,7 +40,7 @@
             },$scope.showAlert);
         };
         $scope.delete = function(){
-            var home = new Home();
+            var home = new $test();
             home.$delete({testId:$scope.testId} ).then(function(home){
                 console.log(home);
                 $scope.getAll();
@@ -52,7 +52,7 @@
             $scope.alertActive = true;
         };
     };
-    controller.$inject = ['$scope','$rootScope','$routeParams','Home', '$menu'];
+    controller.$inject = ['$scope','$rootScope','$routeParams','$test', '$menu'];
     angular.module('http').controller('HTTPController', controller);
 
 })();

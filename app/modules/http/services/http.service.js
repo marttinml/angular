@@ -1,7 +1,5 @@
 (function(){
-	angular.module('home').factory('Home',function($resource, $singleton){
-		var path = $singleton.path;
-		
-		return $resource(path+'test/:testId');
+	angular.module('http').factory('$test',function($resource, $singleton){
+		return $resource($singleton.path + 'test/:testId');
 	});
 })();
