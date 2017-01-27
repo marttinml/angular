@@ -6,12 +6,48 @@ rgb(51, 153, 255) blue
 rgb(0,0,0)
 */
 
+@font-face {
+    font-family: 'Omnes Light';
+    src: url(../fonts/Omnes_ATT%20II%20Light.otf) format('opentype');
+}
+
+@font-face {
+    font-family: 'Omnes Regular';
+    src: url(../fonts/Omnes_ATT%20II-Regular.otf) format('opentype');
+}
+
+@font-face {
+    font-family: 'Omnes Medium';
+    src: url(../fonts/Omnes_ATT%20II%20Medium.otf) format('opentype');
+}
+
+@font-face {
+    font-family: 'Omnes Italic';
+    src: url(../fonts/Omnes_ATT%20II-Italic.otf) format('opentype');
+}
+
+@font-face {
+    font-family: 'Omnes Light Italic';
+    src: url(../fonts/Omnes_ATT%20II%20Light-Italic.otf) format('opentype');
+}
+
+@font-face {
+    font-family: 'Omnes ItalicBold';
+    src: url(../fonts/Omnes_ATT%20II-BoldItalic.otf) format('opentype');
+}
+@font-face {
+    font-family: 'Omnes Bold';
+    src: url(../fonts/Omnes_ATT%20II-Bold.otf) format('opentype');
+}
+
+
+
 *{
 	box-sizing: border-box;
 }
 
 body, input, button,textarea{
-	font-family: 'Roboto', sans-serif;
+	font-family: 'Omnes Light', sans-serif;
 	font-weight: 100;
 	line-height: 1.2;
 	color: rgb(50,50,50);
@@ -63,16 +99,28 @@ header{
 	background-color: rgb(0,0,0);
 }
 
-h1,h2{
+h1,h2,h3{
     font-weight: normal;
+    -webkit-margin-before: 0;
+    -webkit-margin-after: 0;
 }
 h1{
-    font-size: 24px;
+    font-size: 36px;
 }
 h2{
+    font-size: 24px;
+}
+h3{
     font-size: 18px;
 }
 
+
+b{
+    font-family: 'Omnes Regular', sans-serif;
+}
+i{
+    font-family: 'Omnes Light Italic', sans-serif;
+}
 /* Color */
 
 .black{background-color:rgb(0,0,0);}
@@ -168,6 +216,9 @@ table{
 	display: table;
 	border-collapse: collapse;
 	width: 100%;
+}
+th{
+    font-family: 'Omnes Regular', sans-serif;
 }
 th,td{
 	border: 1px solid rgb(200,200,200);

@@ -1,6 +1,6 @@
 ng-menu{
 	display: block;
-	height: 30px;
+	height: 50px;
 }
 ng-menu > i{
 	position: absolute;
