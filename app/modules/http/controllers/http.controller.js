@@ -41,11 +41,9 @@
         };
         $scope.delete = function(){
             var home = new Home();
-            home.DOMID =15;
             home.$delete({testId:$scope.testId} ).then(function(home){
-                console.log(data);
-                $scope.homeList = [];
-                $scope.homeList.push(home);
+                console.log(home);
+                $scope.getAll();
             },$scope.showAlert);
         };
 

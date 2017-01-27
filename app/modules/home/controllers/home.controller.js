@@ -7,7 +7,7 @@
                 picture:"",
                 url: "#/"
             };
-        $menu.options = [ 
+        $menu.options = [
             { item:"Home", url:"#/" },
             { item:"HTTP", url:"#/http" },
             { item:"UI", url:"#/ui" }
